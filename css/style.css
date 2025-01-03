@@ -1,0 +1,452 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../asseste/fonts/Poppins-Medium.ttf);
+    font-family: Roboto;
+    src: url(../asseste/fonts/Roboto-Regular.ttf);
+    font-family: Stalemate;
+    src: url(../asseste/fonts/Stalemate-Regular.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../asseste/img/background.jpg');
+    background-position: center;
+    background-size: cover;background-repeat: no-repeat;
+    height: 100vh;
+    font-family: roboto;
+}
+.nav{
+    height: 50px;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-family: roboto;
+    padding-top: 20px;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.nav img{
+    width: 15px;
+    margin: 0 15px;
+}
+.nav .acount{
+    margin: 10px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-image: url('../asseste/img/acount-logo.jpg');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.nav .acount:hover{
+    border: 5px solid rgba(245, 245, 245, 0.5);
+}
+.dots{
+    cursor: pointer;
+    background-image: url('../asseste/img/dots.png');
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+.dots:hover{
+    background-color: rgba(245, 245, 245, 0.3) ; 
+    border-radius: 100%;
+
+}
+.dots:hover::after{
+    content: "google map";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    flex-direction: column;
+    margin-top: 70px;
+    background-color: rgba(245, 245, 245, 0.3) ;
+}
+.acount{
+    cursor: pointer;
+}
+.dots_menu{
+    right: 20px;
+    top: 70px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 10px solid rgb(221, 226, 255);
+    gap: 30px;
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+   
+
+}
+
+.center{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.dots_menu img{
+    width: 60px;
+
+
+}
+
+.apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+.apps img{
+    width: 45px;
+}
+.apps p{
+    margin-top: 5px;
+}
+.acounts{
+    direction: rtl;
+    width: 100%;
+    position: fixed;
+    right: 20px;
+    top: 70px;
+
+}
+.acounts1 p{
+    margin-bottom: 15px;
+}
+.acounts1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.acounts1{
+    background-color: rgb(247, 247, 247);
+    width: 450px;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    direction: ltr;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    display: none;
+
+    
+}
+.wel_mes{
+    margin: 10px;
+    font-weight: bold;
+
+}
+.gmail_p{
+    font-size: 12px;
+}
+#close{
+    position: absolute;
+    right: 25px;
+    font-size: 18px;
+    background-color: rgb(237, 237, 237);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.manage{
+    font-size: 12px;
+    padding: 8px;
+    width: 250px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid rgb(94, 93, 93);
+    color: rgb(0, 0, 0);
+    background-color: rgb(203, 203, 203);
+}
+.manage:hover{
+    background-color: rgb(146, 145, 145);
+    color: black;
+}
+
+.btn_ad{
+    margin: 15px;
+
+}
+.btn_ad i{
+    cursor: pointer;
+
+}
+
+
+
+.btn_add{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(80, 80, 80);  
+    border-radius: 50px 0 0 50px ;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn_add button{
+    color: white;
+}
+.btn_out button{
+    color: white;
+}
+.btn_add:hover{
+    background-color: rgb(123, 123, 123);
+
+}
+
+.btn_ad button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.btn_ad i{
+    background-color: rgb(235, 234, 234);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    align-content: center;
+
+}
+.btn_ad i:hover{
+    background-color: rgb(228, 228, 228);
+}
+.add .btn_add{
+    padding: 15px;
+}
+.btn_out{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 0 50px 50px 0 ;
+   
+
+
+
+}
+.add .btn_out{
+
+    padding: 15px;
+}
+.btn_out:hover{
+    background-color: rgb(123, 123, 123);
+
+}
+
+.acount_logo{
+    width: 80px;
+    height: 80px;
+    background-image: url('../asseste/img/acount-logo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+.contaner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.google_logo{
+    width: 250px;
+    margin-top: 150px;
+
+}
+.search{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+.search_icon{
+    width: px;
+    margin-left: 15px;
+}
+.search1{
+    background-color: white;
+    margin-top: 40px ;
+    border-radius: 20px;
+    width: 600px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+.search1 img{
+    width: 20px;
+    gap: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.necessary{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.necessary p{
+    margin: 0 20px;
+    font-size: 14px;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+}
+.necessary p:hover{
+    color: black;
+
+}
+
+.webstore{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.webstore:hover{
+    background-color: rgb(224, 219, 206);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.webstore .web_logo{
+    display: inline-block;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: url('../asseste/img/chrome.png');
+    background-color: rgb(205, 177, 206);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shortcut{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shortcut:hover{
+    background-color: rgb(224, 219, 206);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.short1{
+    background-image: url('../asseste/img/Plus-icon.png');
+    background-color: rgb(205, 177, 206);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+@media (max-width: 952px){
+    .search1{
+        width:400px;
+    }
+    .acounts1{
+        width: 400px;
+        height: auto;
+    .nav{
+        height: 50px;
+        gap: 15px;
+        font-size: 14px;
+    }
+    .nav .acount{
+        width: 35px;
+        height: 35px;
+    }
+    .dots{
+        width: 35px;
+        height: 35px;
+        margin: 0 10px;
+        background-size: 25px;
+    }
+    .dots:hover::after{
+        content: "google map";
+        width: 75px;
+        height: 25px;
+        margin-top: 40px;
+    }
+}}
+@media (max-width: 412px){
+    .search1{
+        width:250px;
+        margin-top: 20px;
+
+    }
+    .acounts1{
+        width: 390px;
+        height: auto;
+    .google_logo{
+        width: 150px;
+        margin-top: 150px;
+    
+    }
+    .nav{
+        height: 50px;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .nav .acount{
+        margin-right: 10px;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+    .dots{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+        background-size: 15px;
+    }
+    .dots:hover::after{
+        content: "google map";
+        width: 75px;
+        height: 25px;
+        margin-top: 40px;
+    }
+}
+}
